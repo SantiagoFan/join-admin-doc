@@ -6,6 +6,7 @@ export default defineUserConfig({
   title: 'JoinAdmin',
   description: 'JoinAdmin框架说明文档',
   head: [['link', { rel: 'icon', href: '/images/logo.png' }]],
+  base:'join-admin-doc',
 
   // 主题配置
   theme: defaultTheme({
