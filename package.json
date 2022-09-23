@@ -1,0 +1,14 @@
+{
+  "name": "java-admin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "SanFan",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.51"
+  }
+}
