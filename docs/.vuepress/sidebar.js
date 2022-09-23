@@ -28,6 +28,12 @@ export default {
       ],
     },
     {
+      text: '系统',
+      children: [
+        '/java/system/jwt.md'
+      ],
+    },
+    {
       text: '内容管理cms',
       children: ['/java/TimeRange.md'],
     },
