@@ -1,1 +1,0 @@
-import{_ as d,o as a,c as t,b as e,d as r}from"./app.e77f667f.js";const c={},n=e("h1",{id:"guid-reade-md",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#guid-reade-md","aria-hidden":"true"},"#"),r(" guid reade.md")],-1),o=[n];function s(i,_){return a(),t("div",null,o)}const l=d(c,[["render",s],["__file","index.html.vue"]]);export{l as default};
