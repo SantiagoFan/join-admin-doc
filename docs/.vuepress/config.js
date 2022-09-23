@@ -1,5 +1,7 @@
 import { defineUserConfig } from 'vuepress'
 import { defaultTheme } from 'vuepress'
+import nav from './navbar'
+import sidebar from './sidebar'
 
 export default defineUserConfig({
   lang: 'zh-CN',
@@ -19,59 +21,8 @@ export default defineUserConfig({
     // 编辑本页面
     editLink:false,
     // 顶部菜单
-    navbar: [
-      {
-        text: '指南',
-        link: '/guide',
-      },
-      {
-        text: 'Java后端',
-        link: '/java',
-      },
-      {
-        text: 'UniApp移动',
-        link: '/uniapp',
-      },
-      {
-        text: 'Electron客户端',
-        link: '/electron',
-      },
-      {
-        text: '链接',
-        children: [
-          {
-            text: '若依',
-            link: 'http://doc.ruoyi.vip/ruoyi-vue/',
-          },
-          {
-            text: 'ElementUI',
-            link: 'https://element.eleme.cn/',
-          }
-        ],
-      },
-    ],
+    navbar: nav,
     // 左侧菜单
-    sidebar:{
-      '/guide': [
-        {
-          text: 'Guide',
-          children: [
-            '/guide/README.md', 
-            '/guide/getting-started.md',
-            {
-              text: 'Bundlers Reference',
-              collapsible: true, //折叠
-              children: ['/reference/bundler/vite.md', '/reference/bundler/webpack.md'],
-            },
-        ],
-        },
-      ],
-      '/java': [
-        {
-          text: 'java后端',
-          children: ['/java/TimeRange.md'],
-        },
-      ],
-    }
+    sidebar:sidebar
   })
 })
