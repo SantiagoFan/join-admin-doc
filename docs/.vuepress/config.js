@@ -25,24 +25,32 @@ export default defineUserConfig({
         link: '/guide',
       },
       {
-        text: '组件',
-        link: '/',
+        text: 'Java后端',
+        link: '/java',
+      },
+      {
+        text: 'UniApp移动',
+        link: '/uniapp',
+      },
+      {
+        text: 'Electron客户端',
+        link: '/electron',
       },
       {
         text: '链接',
         children: [
           {
-            text: '组件',
-            link: '/',
+            text: '若依',
+            link: 'http://doc.ruoyi.vip/ruoyi-vue/',
           },
           {
-            text: '组件',
-            link: '/',
-          },
+            text: 'ElementUI',
+            link: 'https://element.eleme.cn/',
+          }
         ],
       },
     ],
-    // 底部菜单
+    // 左侧菜单
     sidebar:{
       '/guide': [
         {
@@ -58,10 +66,10 @@ export default defineUserConfig({
         ],
         },
       ],
-      '/reference/': [
+      '/java': [
         {
-          text: 'Reference',
-          children: ['/reference/cli.md', '/reference/config.md'],
+          text: 'java后端',
+          children: ['/java/TimeRange.md'],
         },
       ],
     }
