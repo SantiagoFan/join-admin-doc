@@ -25,6 +25,14 @@ export default [
       {
         text: 'ElementUI',
         link: 'https://element.eleme.cn/',
+      },
+      {
+        text: 'Join-UI',
+        link: 'https://santiagofan.github.io/join-ui',
+      },
+      {
+        text: 'Join-Style',
+        link: 'https://santiagofan.github.io/join-style',
       }
     ],
   },

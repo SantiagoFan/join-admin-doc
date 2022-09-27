@@ -7,11 +7,11 @@ heroImage: /images/hero.png
 heroText: JoinTeam 内部框架说明文档
 tagline:  团队内部使用
 actions:
-  - text: 快速上手
+  - text: 项目指南
     link: /guide
     type: primary
-  - text: 项目介绍
-    link: /guide
+  - text: 项目演示
+    link: http://join-admin.lingji.vip/
     type: secondary
 
 # 
