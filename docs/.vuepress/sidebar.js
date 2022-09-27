@@ -6,6 +6,7 @@ export default {
         '/guide/README.md', 
         '/guide/getting-started.md',
         '/guide/new-project.md',
+        '/guide/project-step.md'
         // {
         //   text: 'Bundlers Reference',
         //   collapsible: true, //折叠
