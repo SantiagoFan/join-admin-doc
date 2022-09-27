@@ -1,16 +1,16 @@
 export default {
   '/guide': [
     {
-      text: 'Guide',
+      text: '指南',
       children: [
         '/guide/README.md', 
         '/guide/getting-started.md',
         '/guide/new-project.md',
-        {
-          text: 'Bundlers Reference',
-          collapsible: true, //折叠
-          children: ['/reference/bundler/vite.md', '/reference/bundler/webpack.md'],
-        },
+        // {
+        //   text: 'Bundlers Reference',
+        //   collapsible: true, //折叠
+        //   children: ['/reference/bundler/vite.md', '/reference/bundler/webpack.md'],
+        // },
     ],
     },
   ],
@@ -24,7 +24,8 @@ export default {
     {
       text: '框架',
       children: [
-        '/java/framework/time-range.md'
+        '/java/framework/resources.md',
+        '/java/framework/resize-image.md'
       ],
     },
     {

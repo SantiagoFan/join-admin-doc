@@ -4,8 +4,8 @@ title: JoinAdmin
 description: 页面的描述
 home: true
 heroImage: /images/hero.png
-heroText: Join Admin 内部框架说明文档
-tagline: JoinTeam 团队内部框架
+heroText: JoinTeam 内部框架说明文档
+tagline:  团队内部使用
 actions:
   - text: 快速上手
     link: /guide
