@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-425f4898","path":"/electron/","title":"JoinAdmin","lang":"zh-CN","frontmatter":{"title":"JoinAdmin"},"excerpt":"","headers":[],"git":{"updatedTime":1664267835000,"contributors":[{"name":"Administrator","email":"fwg199016","commits":1}]},"filePathRelative":"electron/README.md"}');export{t as data};
