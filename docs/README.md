@@ -11,7 +11,7 @@ actions:
     link: /guide
     type: primary
   - text: 项目演示
-    link: http://join-admin.lingji.vip/
+    link: http://join-admin.lingji.vip
     type: secondary
 
 # 

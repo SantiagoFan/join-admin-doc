@@ -27,6 +27,10 @@ export default [
         link: 'https://element.eleme.cn/',
       },
       {
+        text: 'electron',
+        link: 'https://www.electronjs.org/',
+      },
+      {
         text: 'Join-UI',
         link: 'https://santiagofan.github.io/join-ui',
       },
