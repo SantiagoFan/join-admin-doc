@@ -14,7 +14,8 @@ title: 配合nginx实现自动裁图
 ```
 ### 2 nginx 配置转发规则
 ```yml
-# 缩略图参数重定向  x.jpg!size=s 定位到 s_x.jpg
+  # --------------------自动拆图----------↓-----------------------------
+    # 缩略图参数重定向  x.jpg!size=s 定位到 s_x.jpg
     location ~ .*\.(gif|jpg|jpeg|png|bmp)!size=(.+)$
     {
         expires      30d; # 缓冲时间
@@ -23,7 +24,8 @@ title: 配合nginx实现自动裁图
     # 动态调用图片裁图工具 s_x.jpg 不存在则裁图
     location ~ .*(.+)/(.+)_([a-zA-Z0-9]+\.(gif|jpg|jpeg|png|bmp))$
     {
-      try_files $uri /admin/Resources/ResizeImage/?url=$uri;
+      try_files $uri /prod-api/common/resizeImage?url=$uri;
     }
+     # --------------------自动拆图----------↓-----------------------------
 
 ```
