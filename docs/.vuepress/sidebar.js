@@ -52,4 +52,13 @@ export default {
       children: ['/java/TimeRange.md'],
     },
   ],
+  '/uniapp':[
+    {
+      text: '公共组件',
+      children: [
+        '/uniapp/common/view.md',
+        '/uniapp/common/compontents.md',
+      ],
+    }
+  ]
 }
