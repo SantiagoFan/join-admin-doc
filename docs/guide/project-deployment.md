@@ -62,8 +62,8 @@ tips: 如果涉及到自动裁图 需要在添加完项目后，点击设置、�
 ![nginx](/images/vue-dist.png) 
 5.添加成功后配置vue访问路径的支持，防止刷新404，选择列表中本项目，点击设置-> 配置文件 在 `location ~ .*\.(js|css)?$` 前添加
 ```
- location / {
-            index  index.html index.htm;
-            try_files $uri $uri/ /index.html;
-        }
+location / {
+    index  index.html index.htm;
+    try_files $uri $uri/ /index.html;
+}
 ```
