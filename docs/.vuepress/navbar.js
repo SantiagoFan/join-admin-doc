@@ -8,6 +8,10 @@ export default [
     link: '/java',
   },
   {
+    text: 'Admin后台',
+    link: '/admin',
+  },
+  {
     text: 'UniApp移动',
     link: '/uniapp',
   },

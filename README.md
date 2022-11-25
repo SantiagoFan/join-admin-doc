@@ -3,3 +3,4 @@ yarn install
 
 ##  运行
 yarn docs:dev
+yarn dev

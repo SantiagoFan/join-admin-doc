@@ -53,6 +53,14 @@ export default {
       children: ['/java/TimeRange.md'],
     },
   ],
+  '/admin': [
+    {
+      text: '公共工具',
+      children: [
+        '/admin/resetForm.md'
+      ],
+    },
+  ],
   '/uniapp':[
     {
       text: '公共组件',
