@@ -50,7 +50,10 @@ export default {
     },
     {
       text: '支付中心payment',
-      children: ['/java/TimeRange.md'],
+      children: [
+        '/java/payment/index.md',
+        '/java/payment/pay_order.md'
+      ],
     },
   ],
   '/admin': [
@@ -65,6 +68,7 @@ export default {
     {
       text: '公共组件',
       children: [
+        '/uniapp/common/image-list.md',
         '/uniapp/common/view.md',
         '/uniapp/common/compontents.md',
       ],

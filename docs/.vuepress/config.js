@@ -4,6 +4,7 @@ import nav from './navbar'
 import sidebar from './sidebar'
 
 export default defineUserConfig({
+  port:9090,
   lang: 'zh-CN',
   title: 'JoinAdmin',
   description: 'JoinAdmin框架说明文档',
