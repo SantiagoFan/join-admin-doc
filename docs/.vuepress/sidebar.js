@@ -68,6 +68,7 @@ export default {
     {
       text: '公共组件',
       children: [
+        '/uniapp/common/position-selector.md',
         '/uniapp/common/image-list.md',
         '/uniapp/common/common-list.md',
         '/uniapp/common/view.md',
