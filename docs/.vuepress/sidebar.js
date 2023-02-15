@@ -38,15 +38,15 @@ export default {
     },
     {
       text: '内容管理cms',
-      children: ['/java/TimeRange.md'],
+      children: [],
     },
     {
       text: '电商mall',
-      children: ['/java/TimeRange.md'],
+      children: [],
     },
     {
       text: '仓库管理wms',
-      children: ['/java/TimeRange.md'],
+      children: [],
     },
     {
       text: '支付中心payment',
