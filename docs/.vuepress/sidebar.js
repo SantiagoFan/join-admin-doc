@@ -83,6 +83,12 @@ export default {
         '/uniapp/common/position-info.md',
         '/uniapp/common/compontents.md',
       ],
+    },
+    {
+      text: '全局过滤器',
+      children: [
+        '/uniapp/filter/index.md',
+      ],
     }
   ]
 }
