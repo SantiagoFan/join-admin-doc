@@ -1,5 +1,7 @@
 # Avatar 头像选择组件
 
+### 演示
+![nginx](/images/components/avatar.png)
 
 ### 参数
 |属性|默认值|描述
