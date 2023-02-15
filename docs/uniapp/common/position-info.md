@@ -7,5 +7,5 @@
 ### 引入跳转代码
 
 ```html
- <navigator url="/pages/common/map/PositionInfo?lng=&lat=&area=">商家地地址</navigator>
+ <navigator url="/pages/common/map/PositionInfo?lng=具体经纬度&lat=具体经纬度&area=详细地址或者名称">商家地地址</navigator>
 ```
