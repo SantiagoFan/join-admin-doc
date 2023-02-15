@@ -67,10 +67,18 @@ export default {
   '/uniapp':[
     {
       text: '公共组件',
+      children: [    
+        '/uniapp/components/image-list.md',
+        '/uniapp/components/avatar.md',
+        '/uniapp/components/common-list.md',
+        '/uniapp/components/picker-address.md',
+        '/uniapp/components/map-route-page.md'
+      ],
+    },
+    {
+      text: '公共页面',
       children: [
         '/uniapp/common/position-selector.md',
-        '/uniapp/common/image-list.md',
-        '/uniapp/common/common-list.md',
         '/uniapp/common/view.md',
         '/uniapp/common/compontents.md',
       ],
