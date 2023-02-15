@@ -1,5 +1,7 @@
 # PositionSelector 地址选择页面
 跳转到地址选择页面，选择完成后回传相关信息到前一个页面的函数
+### 演示
+![position-selector](/images/page/position-selector.jpg)
 ### 引入跳转代码
 
 ```html

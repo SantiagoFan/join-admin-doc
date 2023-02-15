@@ -80,7 +80,7 @@ export default {
       text: '公共页面',
       children: [
         '/uniapp/common/position-selector.md',
-        '/uniapp/common/view.md',
+        '/uniapp/common/position-info.md',
         '/uniapp/common/compontents.md',
       ],
     }
