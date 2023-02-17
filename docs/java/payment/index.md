@@ -3,8 +3,38 @@ lang: zh-CN
 title: 支付中心使用
 ---
 # JavaPayment 支付中心使用方法
-
 ## 一.引用包 join-payment
+主要pom中引入
+```xml
+    <dependencyManagement>
+      <dependencies>
+      ...
+        <!--支付中心-->
+        <dependency>
+            <groupId>com.ruoyi</groupId>
+            <artifactId>join-payment</artifactId>
+            <version>${ruoyi.version}</version>
+        </dependency>
+        ...
+      </dependencies>
+    </dependencyManagement>
+
+    <modules>
+      ...
+      <module>join-payment</module>
+      ...
+    </modules>
+```
+admin pom 项目中引入
+```xml
+<!--支付中心-->
+<dependency>
+    <groupId>com.join</groupId>
+    <artifactId>join-payment</artifactId>
+</dependency>
+```
+
+
 
 ## 二. 配置yml支付参数
 ```yml

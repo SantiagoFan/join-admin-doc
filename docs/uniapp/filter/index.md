@@ -11,3 +11,9 @@
 ```vue
 {{user.idcard | hiddenIdCard }}
 ```
+
+### 1.moneyFormat
+保留小数点，默认两位小数点，可传入第二个参数自定义精度位数 `120.00`
+```vue
+{{order.money | moneyFormat }}
+```
