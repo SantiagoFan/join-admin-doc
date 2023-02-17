@@ -52,6 +52,7 @@ export default {
       text: '支付中心payment',
       children: [
         '/java/payment/index.md',
+        '/java/payment/custom.md',
         '/java/payment/pay_order.md'
       ],
     },
