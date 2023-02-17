@@ -78,6 +78,8 @@ IMyOrdersService
 ## 三. 调用发起支付
 Controller 中调用服务
 ```java
-
+PayParam param = new PayParam();
+param.setPayClient(PayClientEnum.WX_JS);
+PayResult res = dgRelationshipService.payOrder(你自己的订单,param);
 
 ```
