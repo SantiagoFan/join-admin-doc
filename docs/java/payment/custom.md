@@ -80,6 +80,17 @@ Controller 中调用服务
 ```java
 PayParam param = new PayParam();
 param.setPayClient(PayClientEnum.WX_JS);
+// 只下预付单不生产支付参数,后期可以通过返回的 payOrder的单号在统一支付支付。如果直接返回参数，需要自己根据业务不同，单独写支付页
+// param.setNeedPayParams(false);
 PayResult res = dgRelationshipService.payOrder(你自己的订单,param);
 
 ```
+
+     
+|属性|类型|默认值|描述
+|---|---|---|---|
+|needPayParams|bool|true| true 下预付单 false 只下单，不生成支付参数
+|openid|string|''|小程序支付必填
+|barCode|string|‘’|主动扫码条码数据
+|payClient|PayClientEnum|null|客户端类型
+
