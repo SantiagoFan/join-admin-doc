@@ -111,11 +111,11 @@ PayResult res = dgRelationshipService.payOrder(你自己的订单,param);
 ## 四. 调用统一支付页
 移动端添加`pages-payment`模块
 业务订单下预支付单成功后（不需要支付参数）跳转到统一支付页完成支付
-```
+```js
 uni.navigateTo({url:'/pages-payment/pay/index?id='+this.payOrderId})
 ```
 支付完成后，回回退到之前的页面，回调后会触发payChange 全局事件，方便原页面做后续业务
-```
+```js
   created(){
     this.$bus.$on("payChange",(res)=>{ })
   },
