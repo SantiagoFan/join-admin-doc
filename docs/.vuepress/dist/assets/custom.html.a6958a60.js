@@ -1,0 +1,78 @@
+import{_ as n,o as s,c as a,e}from"./app.f89f4bd2.js";const t={},p=e(`<h1 id="javapayment-\u81EA\u5DF1\u7684\u8BA2\u5355\u5B9E\u73B0\u652F\u4ED8" tabindex="-1"><a class="header-anchor" href="#javapayment-\u81EA\u5DF1\u7684\u8BA2\u5355\u5B9E\u73B0\u652F\u4ED8" aria-hidden="true">#</a> JavaPayment \u81EA\u5DF1\u7684\u8BA2\u5355\u5B9E\u73B0\u652F\u4ED8</h1><p>join.payment\u6A21\u5757\u4E0B\u7684<code>paymentExample</code>\u6587\u4EF6\u5939\u5199\u4E86\u5B9E\u73B0\u793A\u4F8B\uFF0C\u53EF\u53C2\u8003\u5B9E\u73B0\u81EA\u5DF1\u7684\u8BA2\u5355</p><h2 id="\u4E00-\u5B9E\u4F53\u7C7B\u5B9E\u73B0\u63A5\u53E3" tabindex="-1"><a class="header-anchor" href="#\u4E00-\u5B9E\u4F53\u7C7B\u5B9E\u73B0\u63A5\u53E3" aria-hidden="true">#</a> \u4E00.\u5B9E\u4F53\u7C7B\u5B9E\u73B0\u63A5\u53E3</h2><p>\u5B9E\u4F53\u7C7B \u5B9E\u73B0IPayableOrder \u63A5\u53E3</p><div class="language-java ext-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MyOrder</span> <span class="token keyword">implements</span> <span class="token class-name">IPayableOrder</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">getBusinessNo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">getBusinessTitle</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">getBusinessName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">getPayAmount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="\u4E8C-\u670D\u52A1\u5B9E\u73B0\u63A5\u53E3" tabindex="-1"><a class="header-anchor" href="#\u4E8C-\u670D\u52A1\u5B9E\u73B0\u63A5\u53E3" aria-hidden="true">#</a> \u4E8C.\u670D\u52A1\u5B9E\u73B0\u63A5\u53E3</h2><p>\u670D\u52A1Service \u7684\u63A5\u53E3\u7EE7\u627FIPayableOrderService</p><p>IPayableOrderService \u5305\u542B\u56DB\u4E2A\u4E3B\u8981\u65B9\u6CD5</p><ol><li>\u53D1\u8D77\u652F\u4ED8 PayResult payOrder(IPayableOrder order, PayParam param)</li><li>\u652F\u4ED8\u6210\u529F\u56DE\u8C03 void paySuccess(PayOrder payOrder)</li><li>\u53D1\u8D77\u9000\u6B3E</li><li>\u9000\u6B3E\u6210\u529F\u56DE\u8C03 void refundSuccess(PayOrder refundOrder)</li></ol><div class="language-java ext-java line-numbers-mode"><pre class="language-java"><code><span class="token class-name">MyOrdersServiceImpl</span> <span class="token keyword">implements</span> 
+<span class="token class-name">IPayableOrderService</span><span class="token punctuation">,</span>
+<span class="token class-name">IMyOrdersService</span>
+<span class="token punctuation">{</span>
+  <span class="token comment">// \u652F\u4ED8\u670D\u52A1</span>
+  <span class="token annotation punctuation">@Autowired</span>
+  <span class="token keyword">private</span> <span class="token class-name">IPaymentService</span> paymentService<span class="token punctuation">;</span>
+  <span class="token doc-comment comment">/**
+  * \u83B7\u5F97\u4E1A\u52A1\u540D\u79F0
+  * <span class="token keyword">@return</span> \u4E1A\u52A1\u522B\u540D
+  */</span>
+  <span class="token class-name">String</span> <span class="token function">getBussinesName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token string">&quot;\u5145\u503C\u8BA2\u5355&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token doc-comment comment">/**
+     * \u53D1\u8D77\u652F\u4ED8
+     * <span class="token keyword">@param</span> <span class="token parameter">order</span> \u652F\u4ED8\u4E1A\u52A1\u5355
+     * <span class="token keyword">@param</span> <span class="token parameter">param</span> \u652F\u6301\u53C2\u6570
+     * <span class="token keyword">@return</span> \u652F\u4ED8\u7ED3\u679C
+     */</span>
+    <span class="token class-name">PayResult</span> <span class="token function">payOrder</span><span class="token punctuation">(</span><span class="token class-name">IPayableOrder</span> order<span class="token punctuation">,</span> <span class="token class-name">PayParam</span> param<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">return</span> paymentService<span class="token punctuation">.</span><span class="token function">payOrder</span><span class="token punctuation">(</span>order<span class="token punctuation">,</span>param<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+     <span class="token doc-comment comment">/**
+     * \u652F\u4ED8\u6210\u529F\u540E\u56DE\u8C03
+     * <span class="token keyword">@param</span> <span class="token parameter">payOrder</span> \u652F\u4ED8\u8BB0\u5F55
+     */</span>
+    <span class="token keyword">void</span> <span class="token function">paySuccess</span><span class="token punctuation">(</span><span class="token class-name">PayOrder</span> payOrder<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token comment">// \u901A\u8FC7\u4E1A\u52A1\u5355\u53F7\u67E5\u8BE2\u8BA2\u5355</span>
+        <span class="token class-name">MyOrder</span> order <span class="token operator">=</span> <span class="token function">selectOrderByNo</span><span class="token punctuation">(</span>payOrder<span class="token punctuation">.</span><span class="token function">getBusinessNo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// \u66F4\u65B0\u72B6\u6001</span>
+        <span class="token function">updateOrder</span><span class="token punctuation">(</span>order<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token doc-comment comment">/**
+     * \u9000\u6B3E\u6210\u529F\u540E\u56DE\u8C03
+     * <span class="token keyword">@param</span> <span class="token parameter">refundOrder</span> \u9000\u6B3E\u8BB0\u5F55
+     */</span>
+    <span class="token keyword">void</span> <span class="token function">refundSuccess</span><span class="token punctuation">(</span><span class="token class-name">PayOrder</span> refundOrder<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="highlight-lines"><br><div class="highlight-line">\xA0</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="\u4E09-\u8C03\u7528\u53D1\u8D77\u652F\u4ED8" tabindex="-1"><a class="header-anchor" href="#\u4E09-\u8C03\u7528\u53D1\u8D77\u652F\u4ED8" aria-hidden="true">#</a> \u4E09. \u8C03\u7528\u53D1\u8D77\u652F\u4ED8</h2><p>Controller \u4E2D\u8C03\u7528\u670D\u52A1</p><div class="language-java ext-java line-numbers-mode"><pre class="language-java"><code><span class="token class-name">PayParam</span> param <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PayParam</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+param<span class="token punctuation">.</span><span class="token function">setPayClient</span><span class="token punctuation">(</span><span class="token class-name">PayClientEnum</span><span class="token punctuation">.</span><span class="token constant">JSAPI</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+param<span class="token punctuation">.</span><span class="token function">setPayChannel</span><span class="token punctuation">(</span><span class="token class-name">PayChannelEnum</span><span class="token punctuation">.</span><span class="token constant">WXPAY</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// \u53EA\u4E0B\u9884\u4ED8\u5355\u4E0D\u751F\u4EA7\u652F\u4ED8\u53C2\u6570,\u540E\u671F\u53EF\u4EE5\u901A\u8FC7\u8FD4\u56DE\u7684 payOrder\u7684\u5355\u53F7\u5728\u7EDF\u4E00\u652F\u4ED8\u652F\u4ED8\u3002\u5982\u679C\u76F4\u63A5\u8FD4\u56DE\u53C2\u6570\uFF0C\u9700\u8981\u81EA\u5DF1\u6839\u636E\u4E1A\u52A1\u4E0D\u540C\uFF0C\u5355\u72EC\u5199\u652F\u4ED8\u9875</span>
+<span class="token comment">// param.setNeedPayParams(false);</span>
+<span class="token comment">// param.setPayChannel(PayChannelEnum.PRE); //\u65E0\u5B9E\u9645\u5BA2\u6237\u7AEF\u53C2\u6570</span>
+<span class="token class-name">PayResult</span> res <span class="token operator">=</span> dgRelationshipService<span class="token punctuation">.</span><span class="token function">payOrder</span><span class="token punctuation">(</span>\u4F60\u81EA\u5DF1\u7684\u8BA2\u5355<span class="token punctuation">,</span>param<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><table><thead><tr><th>\u5C5E\u6027</th><th>\u7C7B\u578B</th><th>\u9ED8\u8BA4\u503C</th><th>\u63CF\u8FF0</th></tr></thead><tbody><tr><td>needPayParams</td><td>bool</td><td>true</td><td>true \u4E0B\u9884\u4ED8\u5355 false \u53EA\u4E0B\u5355\uFF0C\u4E0D\u751F\u6210\u652F\u4ED8\u53C2\u6570</td></tr><tr><td>openid</td><td>string</td><td>&#39;&#39;</td><td>\u5C0F\u7A0B\u5E8F\u652F\u4ED8\u5FC5\u586B</td></tr><tr><td>barCode</td><td>string</td><td>\u2018\u2019</td><td>\u4E3B\u52A8\u626B\u7801\u6761\u7801\u6570\u636E</td></tr><tr><td>payClient</td><td>PayClientEnum</td><td>null</td><td>\u5BA2\u6237\u7AEF\u7C7B\u578B</td></tr></tbody></table><h2 id="\u56DB-\u8C03\u7528\u7EDF\u4E00\u652F\u4ED8\u9875" tabindex="-1"><a class="header-anchor" href="#\u56DB-\u8C03\u7528\u7EDF\u4E00\u652F\u4ED8\u9875" aria-hidden="true">#</a> \u56DB. \u8C03\u7528\u7EDF\u4E00\u652F\u4ED8\u9875</h2><p>\u79FB\u52A8\u7AEF\u6DFB\u52A0<code>pages-payment</code>\u6A21\u5757 \u4E1A\u52A1\u8BA2\u5355\u4E0B\u9884\u652F\u4ED8\u5355\u6210\u529F\u540E\uFF08\u4E0D\u9700\u8981\u652F\u4ED8\u53C2\u6570\uFF09\u8DF3\u8F6C\u5230\u7EDF\u4E00\u652F\u4ED8\u9875\u5B8C\u6210\u652F\u4ED8</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>uni.navigateTo({url:&#39;/pages-payment/pay/index?id=&#39;+this.payOrderId})
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>\u652F\u4ED8\u5B8C\u6210\u540E\uFF0C\u56DE\u56DE\u9000\u5230\u4E4B\u524D\u7684\u9875\u9762\uFF0C\u56DE\u8C03\u540E\u4F1A\u89E6\u53D1payChange \u5168\u5C40\u4E8B\u4EF6\uFF0C\u65B9\u4FBF\u539F\u9875\u9762\u505A\u540E\u7EED\u4E1A\u52A1</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>created(){
+    this.$bus.$on(&quot;payChange&quot;,(res)=&gt;{ })
+  },
+  destroyed(){
+    this.$bus.$off(&quot;payChange&quot;)
+  },
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,19),i=[p];function c(l,o){return s(),a("div",null,i)}const u=n(t,[["render",c],["__file","custom.html.vue"]]);export{u as default};

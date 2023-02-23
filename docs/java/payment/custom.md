@@ -114,4 +114,13 @@ PayResult res = dgRelationshipService.payOrder(你自己的订单,param);
 ```
 uni.navigateTo({url:'/pages-payment/pay/index?id='+this.payOrderId})
 ```
+支付完成后，回回退到之前的页面，回调后会触发payChange 全局事件，方便原页面做后续业务
+```
+  created(){
+    this.$bus.$on("payChange",(res)=>{ })
+  },
+  destroyed(){
+    this.$bus.$off("payChange")
+  }
+```
 
