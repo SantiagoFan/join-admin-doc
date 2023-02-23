@@ -5,7 +5,7 @@ description: 页面的描述
 home: true
 heroImage: /images/hero.png
 heroText: JoinTeam 内部框架说明文档
-tagline:  团队内部使用
+tagline:  模块化 自由组合 低耦合
 actions:
   - text: 项目指南
     link: /guide

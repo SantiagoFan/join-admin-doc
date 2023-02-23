@@ -34,7 +34,7 @@ pay_order
 
     /** 客户端交易类型：wx_js,... */
     @Excel(name = "交易类型")
-    private String clientType;
+    private String payClient;
 
     /** 支付渠道 返回的外部订单号 */
     @Excel(name = "支付渠道单号")

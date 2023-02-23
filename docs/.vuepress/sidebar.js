@@ -56,6 +56,12 @@ export default {
         '/java/payment/pay_order.md'
       ],
     },
+    {
+      text: '通知模块notify',
+      children: [
+        '/java/notify/sms.md'
+      ],
+    },
   ],
   '/admin': [
     {

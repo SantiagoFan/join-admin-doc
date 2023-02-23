@@ -46,6 +46,7 @@ wx:
     #    subAppId: #服务商模式下的子商户公众账号ID
     #    subMchId: #服务商模式下的子商户号
     keyPath: xxxx # p12证书的位置，可以指定绝对路径，也可以指定类路径（以classpath:开头）
+    notifyDomain: https://api.xxx.com # 回调域名
 ```
 ## 二.生成数据表
 pay_order 表存储了所有业务类型的支付记录信息
@@ -69,6 +70,7 @@ CREATE TABLE `pay_order`  (
   `state` int(11) NULL DEFAULT 0 COMMENT '支付完成状态 -1撤销 0 默认 1 交易中 2支付完成',
   `business_name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '业务类别：1.商品支付',
   `business_no` varchar(128) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '内部业务 关联订单号码',
+  `pay_client` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '支付端类型',
   `pay_channel` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '支付渠道：alipay,wxpay',
   `pay_channel_no` varchar(128) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '支付渠道 返回的外部订单号',
   `amount` decimal(10, 2) NULL DEFAULT NULL COMMENT '操作金额 支付为正 退款为负',

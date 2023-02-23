@@ -15,7 +15,17 @@ public class MyOrder implements IPayableOrder {
     }
 
     @Override
+    public String getBusinessTitle() {
+      ...
+    }
+
+    @Override
     public String getBusinessName() {
+      ...
+    }
+
+    @Override
+    public String getPayAmount() {
       ...
     }
 }
@@ -79,9 +89,12 @@ IMyOrdersService
 Controller 中调用服务
 ```java
 PayParam param = new PayParam();
-param.setPayClient(PayClientEnum.WX_JS);
+param.setPayClient(PayClientEnum.JSAPI);
+param.setPayChannel(PayChannelEnum.WXPAY);
+
 // 只下预付单不生产支付参数,后期可以通过返回的 payOrder的单号在统一支付支付。如果直接返回参数，需要自己根据业务不同，单独写支付页
 // param.setNeedPayParams(false);
+// param.setPayChannel(PayChannelEnum.PRE); //无实际客户端参数
 PayResult res = dgRelationshipService.payOrder(你自己的订单,param);
 
 ```
@@ -93,4 +106,12 @@ PayResult res = dgRelationshipService.payOrder(你自己的订单,param);
 |openid|string|''|小程序支付必填
 |barCode|string|‘’|主动扫码条码数据
 |payClient|PayClientEnum|null|客户端类型
+
+
+## 四. 调用统一支付页
+移动端添加`pages-payment`模块
+业务订单下预支付单成功后（不需要支付参数）跳转到统一支付页完成支付
+```
+uni.navigateTo({url:'/pages-payment/pay/index?id='+this.payOrderId})
+```
 
