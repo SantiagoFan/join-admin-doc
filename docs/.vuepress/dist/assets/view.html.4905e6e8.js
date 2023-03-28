@@ -1,1 +1,0 @@
-const a=JSON.parse('{"key":"v-50f80a35","path":"/uniapp/common/view.html","title":"\u516C\u5171\u9875\u9762","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1664528887000,"contributors":[{"name":"SanFan","email":"san_fan@qq.com","commits":1}]},"filePathRelative":"uniapp/common/view.md"}');export{a as data};

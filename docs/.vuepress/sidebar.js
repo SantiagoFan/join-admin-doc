@@ -38,21 +38,28 @@ export default {
     },
     {
       text: '内容管理cms',
-      children: ['/java/TimeRange.md'],
+      children: [],
     },
     {
       text: '电商mall',
-      children: ['/java/TimeRange.md'],
+      children: [],
     },
     {
       text: '仓库管理wms',
-      children: ['/java/TimeRange.md'],
+      children: [],
     },
     {
       text: '支付中心payment',
       children: [
         '/java/payment/index.md',
+        '/java/payment/custom.md',
         '/java/payment/pay_order.md'
+      ],
+    },
+    {
+      text: '通知模块notify',
+      children: [
+        '/java/notify/sms.md'
       ],
     },
   ],
@@ -67,11 +74,27 @@ export default {
   '/uniapp':[
     {
       text: '公共组件',
+      children: [    
+        '/uniapp/components/image-list.md',
+        '/uniapp/components/avatar.md',
+        '/uniapp/components/common-list.md',
+        '/uniapp/components/picture.md',
+        '/uniapp/components/picker-address.md',
+        '/uniapp/components/map-route-page.md'
+      ],
+    },
+    {
+      text: '公共页面',
       children: [
-        '/uniapp/common/image-list.md',
-        '/uniapp/common/common-list.md',
-        '/uniapp/common/view.md',
+        '/uniapp/common/position-selector.md',
+        '/uniapp/common/position-info.md',
         '/uniapp/common/compontents.md',
+      ],
+    },
+    {
+      text: '全局过滤器',
+      children: [
+        '/uniapp/filter/index.md',
       ],
     }
   ]
