@@ -17,3 +17,9 @@
 ```vue
 {{order.money | moneyFormat }}
 ```
+
+### 1.beforTimeDesc
+过去时间的摘要描述 如 ：`1天前` `3分钟前`
+```vue
+{{order.time | beforTimeDesc }}
+```

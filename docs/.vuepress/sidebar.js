@@ -80,7 +80,9 @@ export default {
         '/uniapp/components/common-list.md',
         '/uniapp/components/picture.md',
         '/uniapp/components/picker-address.md',
-        '/uniapp/components/map-route-page.md'
+        '/uniapp/components/map-route-page.md',
+        '/uniapp/components/number-stepper.md',
+        '/uniapp/components/date-range-picker.md'
       ],
     },
     {

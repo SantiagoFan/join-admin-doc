@@ -1,0 +1,1 @@
+import{_ as o,o as t,c,a as e}from"./app.b7c65e7a.js";const n="/join-admin-doc/images/ui-dock.jpg",s={},_=e("p",null,[e("img",{src:n,alt:"\u56FE\u7247"})],-1),a=[_];function i(r,d){return t(),c("div",null,a)}const m=o(s,[["render",i],["__file","index.html.vue"]]);export{m as default};
