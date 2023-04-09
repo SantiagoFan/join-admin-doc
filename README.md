@@ -45,3 +45,6 @@ git push
 ```
 在当前文档的gitee仓库选择
 服务 -> giee pages -> 更新
+
+### 查看效果
+http://san_fan.gitee.io/join-admin-doc
