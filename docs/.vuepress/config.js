@@ -18,9 +18,9 @@ export default defineUserConfig({
     toggleColorMode: '切换颜色',
     logo: '/images/hero.png',
     // 仓库
-    repo: 'https://codeup.aliyun.com/602bdcca640593207be341d8/java-team/DG_admin',
+    repo: 'https://gitee.com/san_fan/join-admin',
     // 编辑本页面
-    editLink:false,
+    editLink:true,
     // 顶部菜单
     navbar: nav,
     // 左侧菜单
