@@ -32,6 +32,10 @@ const formData = ref({
 const relues = reactive({
   name:[
     { required: true, message: '名称必须填写', trigger: 'blur' },
+ phone:[
+    { required: true, message: '电话号码必须填写' },
+    { pattern: /^1[3|4|5|6|7|8|9][0-9]\d{8}$/, message: '手机号格式不正确' },
+  ],
   ]
 })
 function submit(){
