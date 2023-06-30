@@ -82,7 +82,8 @@ export default {
         '/uniapp/components/picker-address.md',
         '/uniapp/components/map-route-page.md',
         '/uniapp/components/number-stepper.md',
-        '/uniapp/components/date-range-picker.md'
+        '/uniapp/components/date-range-picker.md',
+        '/uniapp/components/du-form.md'
       ],
     },
     {
