@@ -78,6 +78,7 @@ export default {
         '/uniapp/components/image-list.md',
         '/uniapp/components/avatar.md',
         '/uniapp/components/common-list.md',
+        '/uniapp/components/common-list-vue3.md',
         '/uniapp/components/picture.md',
         '/uniapp/components/picker-address.md',
         '/uniapp/components/map-route-page.md',
