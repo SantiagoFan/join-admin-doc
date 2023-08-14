@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-7a60a4ee","path":"/uniappv2/","title":"JoinAdmin","lang":"zh-CN","frontmatter":{"title":"JoinAdmin"},"excerpt":"","headers":[],"git":{"updatedTime":1691984365000,"contributors":[{"name":"FWG","email":"san_fan@qq.com","commits":1}]},"filePathRelative":"uniappv2/README.md"}');export{e as data};

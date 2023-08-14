@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-7c9046a6","path":"/uniappv2/common/compontents.html","title":"\u516C\u5171\u7EC4\u4EF6","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1691984365000,"contributors":[{"name":"FWG","email":"san_fan@qq.com","commits":1}]},"filePathRelative":"uniappv2/common/compontents.md"}');export{t as data};

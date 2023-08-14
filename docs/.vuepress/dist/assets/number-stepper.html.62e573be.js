@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-bab92808","path":"/uniappv2/components/number-stepper.html","title":"NumberStepper \u6B65\u8FDB\u5668","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1691984365000,"contributors":[{"name":"FWG","email":"san_fan@qq.com","commits":1}]},"filePathRelative":"uniappv2/components/number-stepper.md"}');export{e as data};
