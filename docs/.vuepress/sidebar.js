@@ -71,20 +71,42 @@ export default {
       ],
     },
   ],
+  '/uniappv2':[
+    {
+      text: '公共组件',
+      children: [    
+        '/uniappv2/components/image-list.md',
+        '/uniappv2/components/avatar.md',
+        '/uniappv2/components/common-list.md',
+        '/uniappv2/components/picture.md',
+        '/uniappv2/components/picker-address.md',
+        '/uniappv2/components/map-route-page.md',
+        '/uniappv2/components/number-stepper.md',
+        '/uniappv2/components/date-range-picker.md',
+        '/uniappv2/components/du-form.md'
+      ],
+    },
+    {
+      text: '公共页面',
+      children: [
+        '/uniapp/common/position-selector.md',
+        '/uniapp/common/position-info.md',
+        '/uniapp/common/compontents.md',
+      ],
+    },
+    {
+      text: '全局过滤器',
+      children: [
+        '/uniapp/filter/index.md',
+      ],
+    }
+  ],
   '/uniapp':[
     {
       text: '公共组件',
       children: [    
-        '/uniapp/components/image-list.md',
-        '/uniapp/components/avatar.md',
-        '/uniapp/components/common-list.md',
-        '/uniapp/components/common-list-vue3.md',
-        '/uniapp/components/picture.md',
-        '/uniapp/components/picker-address.md',
-        '/uniapp/components/map-route-page.md',
-        '/uniapp/components/number-stepper.md',
-        '/uniapp/components/date-range-picker.md',
-        '/uniapp/components/du-form.md'
+        '/uniapp/common/common-list.md',
+        '/uniapp/components/dropdown.md',
       ],
     },
     {

@@ -12,6 +12,10 @@ export default [
     link: '/admin',
   },
   {
+    text: 'UniApp移动v2',
+    link: '/uniappv2',
+  },
+  {
     text: 'UniApp移动',
     link: '/uniapp',
   },

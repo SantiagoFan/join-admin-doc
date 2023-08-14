@@ -5,23 +5,10 @@
 · 筛选  
 · 排序  
 · 下拉刷新  
-· 上拉加载更多
+· 上拉加载更多  
 · 全选
 
-### 下拉刷新（按需修改，非必须）
-在 pages.json 内修改相关列表页的 enablePullDownRefresh 参数
-```json{6}
-{
-  "pages": [
-    {
-      "path": "你的页面地址",
-      "style": {
-        "enablePullDownRefresh": true // 增加此行 当前页面启用下拉刷新
-      }
-    }
-  ]   
-}
-```
+
 
 ### 列表页模板
 ```js
@@ -30,7 +17,7 @@
   <view>
     <view v-for="(item,index) in list" :key="index">
         <checkbox style="transform: scale(0.7)" @tap="item.$checked= !item.$checked" :value="item.$checked" :checked="item.$checked"/>
-        数据
+        数据内容
     </view>
   </view>
 
@@ -72,3 +59,17 @@ LoadMore |函数 | 加载更多
 ChangeSort( field ) |函数 | 切换排序加载数据
 CheckedAll |函数 | 全选/全不选
 
+### 下拉刷新（按需修改，非必须）
+在 pages.json 内修改相关列表页的 enablePullDownRefresh 参数
+```json{6}
+{
+  "pages": [
+    {
+      "path": "你的页面地址",
+      "style": {
+        "enablePullDownRefresh": true // 增加此行 当前页面启用下拉刷新
+      }
+    }
+  ]   
+}
+```
