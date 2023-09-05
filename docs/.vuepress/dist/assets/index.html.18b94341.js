@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as n,a as c}from"./app.dd9febb5.js";const o={},_=c("p",null,"vue3 \u7248\u672Cuniapp",-1),s=[_];function a(r,l){return t(),n("div",null,s)}const d=e(o,[["render",a],["__file","index.html.vue"]]);export{d as default};

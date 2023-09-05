@@ -20,7 +20,8 @@ export default {
     {
       text: '公共工具',
       children: [
-        '/java/common/time-range.md'
+        '/java/common/time-range.md',
+        '/java/common/statistics'
       ],
     },
     {
